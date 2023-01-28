@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    block head
+      title #{title}
+  link(rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico")
+  link(rel="stylesheet" href="../theme/init.scss")
+  style.
+    @font-face {
+      font-family: "DMSans";
+      font-weight: 400;
+      src: url("/public/fonts/DMSans-Regular.ttf");
+    }
+  script(defer type="module" src="../js/main.js")
+body
+  #container
+    include header
+    block content
+    include footer

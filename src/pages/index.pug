@@ -1,0 +1,51 @@
+extends ../blocks/layout
+
+prepend head
+  title= "Home"
+
+block content
+
+  //- -
+  //-   var menuItems = [
+  //-     { imgSrc: "spotify.png", url: "http://spotify.com" },
+  //-     { imgSrc: "deezer.png", url: "http://deezer.com" },
+  //-     { imgSrc: "soundcloud.png", url: "http://soundcloud.com" },
+  //-     { imgSrc: "genius.png", url: "http://genius.com" },
+  //-     { imgSrc: "apple.png", url: "http://apple.com" },
+  //-   ]
+
+  .podcast
+    .podcast__media
+      img.podcast__img(src='/public/images/podcast_img.jpg' alt='podcast_img')
+
+    .podcast__wrapper
+      .podcast__wrapper__text
+        span.podcast__wrapper__text__title Take your podcast to the           
+          span.podcast__wrapper__text__title2 next
+            span.podcast__wrapper__text__title3 level
+
+      span.podcast__wrapper__subtitle Listen on
+
+      ul.podcast__wrapper__list
+        //- each item in menuItems
+        //-   li.podcast__wrapper__item
+        //-     a.podcast__wrapper__item__link(href=item.url)
+        //-       img.podcast__wrapper__img(src="public/images/#{item.imgSrc}" alt="Social Icon" target="_blank")
+
+        li.podcast__wrapper__item
+          a.podcast__wrapper__item__link(href='//spotify.com')
+            img.podcast__wrapper__img(src='/public/images/spotify.png' alt='spotify')
+        li.podcast__wrapper__item
+          a.podcast__wrapper__item__link(href='//deezer.com')
+            img.podcast__wrapper__img(src='/public/images/deezer.png' alt='deezer')
+        li.podcast__wrapper__item
+          a.podcast__wrapper__item__link(href='//soundcloud.com')
+            img.podcast__wrapper__img(src='/public/images/soundcloud.png' alt='soundcloud')
+        li.podcast__wrapper__item
+          a.podcast__wrapper__item__link(href='//genius.com')
+            img.podcast__wrapper__img(src='/public/images/genius.png' alt='genius')
+        li.podcast__wrapper__item
+          a.podcast__wrapper__item__link(href='//apple.com')
+            img.podcast__wrapper__img(src='/public/images/hz.png' alt='hz')
+
+
