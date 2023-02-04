@@ -1,7 +1,7 @@
 {
-  "description": "Some project description",
+  "description": "Castaway - pug + scss",
   "license": "UNLICENCED",
-  "name": "templating-project",
+  "name": "castaway",
   "version": "1.0.0",
   "scripts": {
     "build": "parcel build src/pages/*.pug",
