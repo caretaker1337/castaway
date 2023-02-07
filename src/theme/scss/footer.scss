@@ -2,8 +2,22 @@
   display: flex;
   justify-content: flex-start;
 
+  @media #{$desktop} {
+    column-gap: 60px;
+    padding-bottom: 40px;
+  }
+
+  @media #{$mobile} {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
   &__logo {
     margin-right: 240px;
+
+    @media #{$desktop} {
+      margin-right: 0;
+    }
 
     &__main {
       width: 160px;
@@ -20,6 +34,10 @@
 
   &__menu {
     margin-right: 125px;
+
+    @media #{$desktop} {
+      margin-right: 0;
+    }
 
     &__link {
       text-decoration: none;
@@ -44,6 +62,11 @@
     margin-right: 30px;
     margin-bottom: 130px;
 
+    @media #{$desktop} {
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+
     &__link {
       text-decoration: none;
       font-size: 17px;
@@ -64,6 +87,9 @@
   }
 
   &__icon__menu {
+    @media #{$mobile} {
+      display: none;
+    }
 
     &__list {
       display: flex;

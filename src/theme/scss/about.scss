@@ -1,7 +1,13 @@
 .about {
+  align-items: flex-start;
   display: flex;
   justify-content: space-around;
   margin-bottom: 100px;
+
+  @media #{$desktop} {
+    margin-bottom: 50px;
+    column-gap: 50px;
+  }
 
   &__wrapper {
     display: flex;
@@ -28,6 +34,11 @@
         line-height: 80px;
         color: white;
         margin-bottom: 30px;
+
+        @media #{$desktop} {
+          font-size: 46px;
+          line-height: 56px;
+        }
       }
 
       &__subtitle1 {

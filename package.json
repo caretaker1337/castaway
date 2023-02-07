@@ -1,7 +1,7 @@
 {
-  "description": "Some project description",
+  "description": "Castaway",
   "license": "UNLICENCED",
-  "name": "templating-project",
+  "name": "castaway",
   "version": "1.0.0",
   "scripts": {
     "build": "parcel build src/pages/*.pug",
@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@parcel/transformer-pug": "2.8.0",
-    "@parcel/transformer-sass": "2.8.0",
-    "parcel": "^2.8.0"
+    "@parcel/transformer-sass": "2.8.3",
+    "parcel": "2.8.0"
   }
 }
